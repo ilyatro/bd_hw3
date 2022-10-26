@@ -18,7 +18,7 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     //    val data = fromFile("housing.csv").getLines.toArray.flatMap(_.split("\\s+")) //.map(_.toDouble)
-    val data = csvread(new File("housing_2.csv"), ';')
+    val data = csvread(new File("housing.csv"), ';')
     val n_cols = data.cols
 
     val target = data(::, n_cols - 1).copy
